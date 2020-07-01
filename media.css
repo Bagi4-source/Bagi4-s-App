@@ -1,0 +1,6 @@
+@media screen and (max-device-width: 1080px) {
+    #maindiv{
+    width: 900px;
+    height: 200px;
+	}
+   }
