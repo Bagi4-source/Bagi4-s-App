@@ -2,16 +2,78 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
 	<title>Document</title>
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="media.css">
 </head>
-<body>
-	<div>
-		<div id="maindiv"></div>
-		<div class="button" id="b1"></div>
-		<div class="button" id="b2"></div>
+<nav class="navi">
+	<table>
+		<td><span class="trbut" onclick="slide()"><b>Первая кнопка</b></span></td>
+		<td><span class="trbut"><b>Вторая</b></span></td>
+
+		<tr style="position: fixed; top: 10px; right: 10px;">
+       		<td><img src="https://raw.githubusercontent.com/VKCOM/icons/70270f13670f56dadf04741f26a87e7591b3be8c/src/svg/28/market_outline_28.svg" alt="" width="30px;"></td>
+    		<td><img src="https://raw.githubusercontent.com/VKCOM/icons/70270f13670f56dadf04741f26a87e7591b3be8c/src/svg/28/settings_28.svg" alt="" width="30px;"></td>
+  		</tr>
+	</table>
+</nav>
+<body><div id="page1">
+	<table>
+  		<tr>
+    		<td><img align="center" src="img/div.png" alt="" width="375px;" style="margin: 10px;"></td>
+  		</tr>
+  		<tr class="header" style="color: white;">
+    		<td style="position: relative;"><img src="img/button.png" alt="" width="170px;" style="margin: 10px;"><span style="position: absolute; left: 50px; padding: 20px;">shfshfsd</span></td>
+    		<td style="position: relative;"><img src="img/button.png" alt=""width="170px;" style="margin: 10px; margin-left: 15px;"><span style="position: absolute; left: 55px; padding: 20px;">shfshfsd</span></td>
+  		</tr>
+  		<tr>
+    		<td></td>
+    	
+  		</tr>
+	</table>
 	</div>
+
+	<div id="page2">
+			
+
+		
+		
+	</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script type="text/javascript" src="https://vk.com/js/api/openapi.js?168"></script>
+		<!-- VK Widget -->
+		<div id="vk_community_messages"></div>
+		<script type="text/javascript">
+		VK.Widgets.CommunityMessages("vk_community_messages", 127607773, {disableButtonTooltip: "1"});
+		</script>
+
+	<script>
+	function slide() {
+   	if (document.getElementById('page1').style.left === '0px') {
+        document.getElementById('page1').style.left = '-150px';
+    }
+	</script>
+
+	<script>
+	$(window).scroll(function(){
+	if ($(window).scrollTop() > 260) {
+	$('.header').addClass('change');
+	}
+	else {
+	$('.header').removeClass('change')
+	}
+	});
+	</script>
+	<script>
+	$(window).scroll(function(){
+	if ($(window).scrollTop() > 260) {
+	$('.trbut').addClass('block');
+	}
+	else {
+	$('.trbut').removeClass('block')
+	}
+	});
+	</script>
 </body>
 </html>
