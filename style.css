@@ -1,5 +1,5 @@
 html{
-	max-width: 425;
+	max-width: 100%;
 	background: white;
 	color: black;
     font-family: TT Commons;
@@ -37,6 +37,7 @@ td{
 body{
     top: 35px;
     position: relative;
+    overflow-x: hidden;
 }
 #page1{
     position: absolute;

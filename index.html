@@ -37,6 +37,7 @@
 		
 	</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="jquery.touchSwipe.min.js"></script>
 		<script type="text/javascript" src="https://vk.com/js/api/openapi.js?168"></script>
 		<!-- VK Widget -->
 		<div id="vk_community_messages"></div>
@@ -60,6 +61,7 @@
 });
 	</script>
 	<script>
+
 	$('#slide1').click(function() {
     $('#page1').css({
         'left': '0'
@@ -83,5 +85,42 @@
 	}
 	});
 	</script>
+	<script>
+	jQuery('page1').swipe( {
+    swipeStatus:function(event, phase, direction, distance, duration, fingerCount, fingerData, currentDirection)
+    {
+        if (phase=="start"){
+            // сработает в начале swipe
+        } 
+        if (phase=="end"){ 
+            //сработает через 20 пикселей то число которое выбрали в threshold
+            if (direction == 'left') {
+			            	$('#page1').css({
+			    	'transition-duration':'0.5s',
+			        'left': '-100%'
+			    });
+			    $('#page2').css({
+			    	'transition-duration':'0.5s',
+			        'left': '0'
+			    });
+			    $('#pagestat').css({
+			    	'left': '230px'
+			    })
+                //сработает при движении влево
+            }
+            if (direction == 'right') {
+                //сработает при движении вправо
+            }
+            if (direction == 'up') {
+                //сработает при движении вверх
+            }
+            if (direction == 'down') {
+                //сработает при движении вниз
+            }
+ },
+ triggerOnTouchEnd:false,
+ threshold:20 // сработает через 20 пикселей
+});
+</script>
 </body>
 </html>
