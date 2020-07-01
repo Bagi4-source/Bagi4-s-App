@@ -1,4 +1,13 @@
 @media screen and (max-device-width: 375px) {
-    #maindiv{
-	}
+    .header img{
+    	width: 130px;
+    }
+   }
+@media screen and (max-device-width: 360px) {
+    .header img{
+    	width: 130px;
+    }
+    #but1{
+		margin-left: 18px;
+    }
    }

@@ -13,7 +13,7 @@ td{
     opacity: 0;
     transition-duration: 0.3s;
 }
-.navi{
+#navi{
     opacity: 0.98;
     width: 100%;
     position: fixed;
@@ -26,12 +26,8 @@ td{
     font-size: 13pt;
 }
 .trbut{
-    padding-left: 20px;
-    padding-right: 40px;
     padding-bottom: 2px;
-    margin-left: 20px;
     margin-top: 15px;
-    float: left;
 }
 
 body{
@@ -48,16 +44,24 @@ body{
 #page2{
     width: 100%;
     position: absolute;
-    left: 102%;
+    left: 104%;
     transition-duration:0.35s;
     top: 35px;
 }
 #pagestat{
     position: fixed;
     top: 38px;
-    left: 50px;
-    width: 150px;
+    left: 13%;
+    width: 35%;
     z-index: 1000;
     border-bottom: 2px solid #4780C3;
     transition-duration: 0.35s;
+}
+#but1{
+    margin: 10px;
+    margin-left: 20px;
+}
+#but2{
+    margin: 10px;
+    margin-left: 15px;
 }
