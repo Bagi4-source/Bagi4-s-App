@@ -2,22 +2,28 @@ html{
 	max-width: 425;
 	background: #191919;
 	color: white;
+	position: absolute;
 }
 #maindiv{
 	background: #434447;
     width: 80%;
-    height: 200px;
+    height: 150px;
     position: fixed;
     border-radius: 15px;
     left: 10%;
-    top: 20%;
+    top: 60px;
 }
-#button{
+.button{
 	background: #0087D0;
-    width: 40%;
-    height: 35px;
+    width: 38%;
+    height: 30px;
     position: fixed;
     border-radius: 10px;
-    left: 10%;
-    top: 60%;
+    top: 230px;
+}
+#b1{
+	left: 10%;
+}
+#b2{
+	right: 10%;
 }
