@@ -23,24 +23,15 @@ td{
     height: 50px;
     text-align: center;
     z-index: 1000;
+    font-size: 13pt;
 }
 .trbut{
     padding-left: 20px;
-    padding-right: 20px;
+    padding-right: 40px;
     padding-bottom: 2px;
     margin-left: 20px;
     margin-top: 15px;
     float: left;
-    opacity: 0;
-    transition-duration: 0.3s;
-    border-bottom: 2px black solid;
-}
-.trbut:hover{
-    border-bottom: 2px #4780C3 solid;
-}
-.trbut.block{
-    opacity: 0.98;
-    transition-duration: 0.3s;
 }
 
 body{
@@ -50,4 +41,22 @@ body{
 #page1{
     position: absolute;
     left: 0px;
+    transition-duration:0.35s;
+    width: 100%;
+}
+#page2{
+    width: 100%;
+    position: absolute;
+    left: 102%;
+    transition-duration:0.35s;
+    top: 35px;
+}
+#pagestat{
+    position: fixed;
+    top: 38px;
+    left: 50px;
+    width: 150px;
+    z-index: 1000;
+    border-bottom: 2px solid #4780C3;
+    transition-duration: 0.35s;
 }
