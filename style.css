@@ -5,10 +5,6 @@ html{
     font-family: TT Commons;
     scroll-behavior: smooth;
 }
-td{
-    float: left;
-    padding-left: 5px; 
-}
 .header.change{
     opacity: 0;
     transition-duration: 0.3s;
@@ -57,6 +53,12 @@ body{
     border-bottom: 2px solid #4780C3;
     transition-duration: 0.35s;
 }
+.button{
+    color: white;
+    position: absolute;
+    width: 100%;
+    left: 0;
+}
 #but1{
     margin: 10px;
     margin-left: 20px;
@@ -64,4 +66,28 @@ body{
 #but2{
     margin: 10px;
     margin-left: 15px;
+}
+.up{
+    opacity: 0;
+    transition-duration: 0.5s;
+}
+.vis{
+    opacity: 1;
+}
+#divads{
+        position: absolute;
+        width: 95%;
+        height: 140px;
+        top: 125%;
+        padding: 2.5%;
+}
+.ads{
+    position: relative;
+    margin: 10px;
+}
+.ads span{
+    position: absolute;
+  left: 5px;
+  top: 5px;
+  width: 100%;
 }
