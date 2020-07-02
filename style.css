@@ -5,9 +5,14 @@ html{
     font-family: TT Commons;
     scroll-behavior: smooth;
 }
+svg
+{
+ fill: currentColor;
+}
 .header.change{
     opacity: 0;
-    transition-duration: 0.3s;
+    transition: 300ms;
+    -webkit-transition: 300ms;
 }
 #navi{
     opacity: 0.98;
@@ -34,14 +39,16 @@ body{
 #page1{
     position: absolute;
     left: 0px;
-    transition-duration:0.35s;
+    transition: 350ms;
+    -webkit-transition: 350ms;
     width: 100%;
 }
 #page2{
     width: 100%;
     position: absolute;
     left: 104%;
-    transition-duration:0.35s;
+    transition: 350ms;
+    -webkit-transition: 350ms;
     top: 35px;
 }
 #pagestat{
@@ -51,7 +58,8 @@ body{
     width: 35%;
     z-index: 1000;
     border-bottom: 2px solid #4780C3;
-    transition-duration: 0.35s;
+    transition: 350ms;
+    -webkit-transition: 350ms;
 }
 .button{
     color: white;
@@ -69,7 +77,8 @@ body{
 }
 .up{
     opacity: 0;
-    transition-duration: 0.5s;
+    transition: 500ms;
+    -webkit-transition: 500ms;
 }
 .vis{
     opacity: 1;
